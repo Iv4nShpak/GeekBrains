@@ -6,12 +6,12 @@ namespace lessons_1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Введите своё имя: ");
-            var name = Console.ReadLine();
+            Console.WriteLine("Введите своё имя: "); 
+            var name = Console.ReadLine(); //ввод имени пользователем через консоль
 
-            Console.WriteLine($"Привет {name}, сегодня {DateTime.Now}.");
+            Console.WriteLine($"Привет {name}, сегодня {DateTime.Now}."); //вывод приветствия с актуальной датой на консоль
 
-            Console.ReadKey();
+            Console.ReadKey(); 
         }
     }
 }
