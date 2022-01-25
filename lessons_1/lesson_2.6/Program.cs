@@ -17,11 +17,18 @@ namespace lesson_2._6
         }
         static void Main(string[] args)
         {
-            DayOfWeek workSchedule1 = DayOfWeek.Monday | DayOfWeek.Tuesday | DayOfWeek.Wednesday | DayOfWeek.Thursday;
             DayOfWeek workSchedule2 = DayOfWeek.Wednesday | DayOfWeek.Thursday | DayOfWeek.Friday | DayOfWeek.Saturday | DayOfWeek.Sunday;
+            DayOfWeek workSchedule1 = DayOfWeek.Monday | DayOfWeek.Tuesday | DayOfWeek.Wednesday | DayOfWeek.Thursday;
             DayOfWeek workSchedule3 = DayOfWeek.Monday | DayOfWeek.Tuesday | DayOfWeek.Wednesday | DayOfWeek.Thursday | DayOfWeek.Friday;
             DayOfWeek workSchedule4 = DayOfWeek.Tuesday | DayOfWeek.Wednesday | DayOfWeek.Thursday | DayOfWeek.Friday;
-
+            
+            /* Вариант 2
+            DayOfWeek workSchedule1 = (DayOfWeek)0b_00001111;
+            DayOfWeek workSchedule2 = (DayOfWeek)0b_01111100;
+            DayOfWeek workSchedule3 = (DayOfWeek)0b_00011111;
+            DayOfWeek workSchedule4 = (DayOfWeek)0b_00011110;
+            */
+            
             Console.WriteLine("--------------Список офисов:--------------\n|Офис #1|  |Офис #2|  |Офис #3|  " +
                               "|Офис #4|\n \nВведите номер офиса, что бы узнать график его работы:");
             
